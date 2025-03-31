@@ -14,7 +14,7 @@ This script is designed to monitor the battery level of a laptop running Linux. 
 # Installation
 1. Save the script `alarm-status-battery-laptop.sh` in whatever directory you want.
     
-    In this case I saved in `/usr/bin/`. Take into account as you need to modify the service in the line:
+    In this case I saved it in `/usr/bin/`. Take into account as you need to modify the service in the line:
     ```bash
     ExecStart=/bin/bash /usr/bin/alarm-status-battery-laptop.sh
     ```
@@ -48,7 +48,7 @@ This script is designed to monitor the battery level of a laptop running Linux. 
     Paste this inside:
     ```bash
     [Unit]
-    Description=Ejecuta el script de batería cada 2 minutos
+    Description=Runs the battery script every 2 minutes
 
     [Timer]
     OnUnitActiveSec=2min
